@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!--enlace de css-->
     <link rel="stylesheet" href="./css/styles.css">
     <title>Farmacia Yacomella</title>
@@ -17,17 +19,35 @@
 <header>
     <!--logo y menu de navegacion-->
     <div class="menu">
-        <nav class="barra">
-            <ul>
-                <a href="../Proyecto-final/index.html"><img class="logo" src="img/Logo.jpg" alt="Logo"></a>
-                <a class="barra-opcion" href="./index.html">Home</a>
-                <a class="barra-opcion" href="./pages/nosotros.html">Nosotros</a>
-                <a class="barra-opcion" href="./pages/productos.html">Productos</a>
-                <a class="barra-opcion" href="./pages/servicios.html">Servicios</a>
-                <a class="barra-opcion" href="./pages/contacto.html">Contacto</a>
-            </ul>
-        </nav>
+        <a href="../Proyecto-final/index.html"><img class="logo" src="img/Logo.jpg" alt="Logo"></a>
     </div>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     
 </header>
 
