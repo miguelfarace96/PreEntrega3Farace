@@ -1,0 +1,137 @@
+/*reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//nesting
+
+//hojas secundarias
+@import "scss/utilidades/variables.scss";
+@import "scss/nosotros.scss";
+@import "scss/productos.scss";
+@import "scss/servicios.scss";
+@import "scss/contacto.scss";
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    header{
+        background-color: $color-menu;
+        .menu{
+            top: 10px;
+            left: 10px;
+            z-index: 2;
+            padding: 5px;
+            color: white;
+            text-shadow: 5px black;
+            .barra-opcion{
+                background-color: green;
+                text-align: center;
+                width: 150px;
+                height: 60px;
+                margin: 10px;
+                padding: 5px;
+                border: 2px solid rgb(11, 80, 11);
+            }
+        }
+        .logo{
+            height: 150px;
+            width: 150px;
+            margin: 10px;
+        }
+        div{
+            nav{
+                ul{
+                    a{
+                        display:inline-block;
+                        align-items:center;
+                        text-decoration: none;
+                        text-align: center;
+                        color: white;
+                        text-shadow: 5px black;
+                        font-size: 20px;
+                        justify-content: space-evenly;
+                        list-style: none 
+                    }
+                }
+            }
+        }
+        nav{
+            background-color: $color-menu;
+            display:inline-block;
+            align-items:center;
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            text-shadow: 5px black;
+            font-size: 20px;
+            justify-content: space-evenly;
+            list-style: none 
+        }
+    }
+
+    main{
+        background-image: linear-gradient(rgb(195, 245, 195) , rgb(120, 243, 120) );
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        div{
+            .pagina-principal{
+                display: grid;
+                grid-template-columns: 4fr;
+                grid-template-rows: 1fr 3fr;
+                gap: 10px;
+                grid-template-areas:
+                    "titulo titulo titulo"
+                    "imagen imagen texto";
+            }
+            h2{
+                .titulo-home{
+                    font-size: 40px;
+                    color: rgb(3, 77, 3);
+                    text-decoration: underline;
+                    font-size: xx-large;
+                    grid-area: titulo;
+                }
+            }
+            div{
+                .imagen-home{
+                    grid-area: imagen;
+                }
+                .img-farmacia-home{
+                    width: 500px;
+                    height: 300px;
+                }
+                .texto-home{
+                    grid-area: texto;
+                }
+                p{
+                    font-style: oblique;
+                    font-size: 30px;
+                }
+            }
+        }
+        
+    }
+
+    footer{
+        background-color: rgb(88, 231, 52);
+        display:flex;
+        color: rgb(1, 44, 19);
+        font-size: 15px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+        div{
+            margin: 5px;
+            padding: 10px;
+            .icono{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}

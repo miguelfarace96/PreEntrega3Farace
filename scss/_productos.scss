@@ -1,0 +1,17 @@
+main{
+    div{
+        .foto-producto{
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+        }
+        .boton-carro{
+            background-color: greenyellow;
+            border-color: black;
+            border-style: double;
+            font-size: 20px;
+            padding: 5px;
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+main{
+    div{
+        .img-farmacia-servicios{
+            width: 500px;
+            height: 300px;
+        }
+        section :hover{
+            background-color: greenyellow;
+            font-weight: bold;
+        }
+        ul{
+            text-align: center;
+            font-size: 30px;
+            font-style: italic;
+        }
+    }
+}
